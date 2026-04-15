@@ -502,6 +502,22 @@ img {
 }
 
 @media (max-width: 768px) {
+    html {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+
+    .section {
+        scroll-snap-align: unset;
+        scroll-snap-stop: normal;
+        min-height: auto;
+    }
+
+    .section-card,
+    .hero-section {
+        min-height: auto;
+    }
+
     .nav {
         gap: 14px;
         flex-wrap: wrap;
@@ -549,15 +565,15 @@ img {
         padding: 9px 13px;
     }
 
-  .memoji-row {
-    gap: 12px;
-    margin-top: 24px;
-  }
+    .memoji-row {
+        gap: 12px;
+        margin-top: 24px;
+    }
 
-  .memoji-row img {
-    width: 84px;
-    height: 84px;
-  }
+    .memoji-row img {
+        width: 84px;
+        height: 84px;
+    }
 
     .interest-main {
         max-width: 100%;
